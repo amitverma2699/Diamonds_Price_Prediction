@@ -81,8 +81,8 @@ class DataTransformation():
             test_df=pd.read_csv(test_path)
 
             logging.info("read train and test data complete")
-            logging.ingo(f"Train dataframe head : \n{train_df.head().to_string()}")
-            logging.ingo(f"Test dataframe head : \n{test_df.head().to_string()}")
+            logging.info(f"Train dataframe head : \n{train_df.head().to_string()}")
+            logging.info(f"Test dataframe head : \n{test_df.head().to_string()}")
 
             preprocessing_obj = self.get_data_transformation()
 
@@ -116,13 +116,6 @@ class DataTransformation():
                 train_arr,
                 test_arr
             )
-
-
-
-
-
-
-
 
         except Exception as e:
             logging.info("Exception occured in the initiate_datatransformation")
