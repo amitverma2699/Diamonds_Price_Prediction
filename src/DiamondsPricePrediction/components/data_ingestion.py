@@ -11,8 +11,8 @@ import sys
 
 class DataIngestionConfig:
     raw_data_path :str = os.path.join("Artifacts","raw.csv")
-    train_data_path :str = os.path.join("Artifacts","raw.csv")
-    test_data_path :str = os.path.join("Artifacts","raw.csv")
+    train_data_path :str = os.path.join("Artifacts","train.csv")
+    test_data_path :str = os.path.join("Artifacts","test.csv")
 
 class DataIngestion():
     def __init__(self):
@@ -40,6 +40,12 @@ class DataIngestion():
             test_data.to_csv(self.ingestion_config.test_data_path,index=False)
 
             logging.info("Data ingestion part completed")
+
+            return (
+
+                self.ingestion_config.train_data_path,
+                self.ingestion_config.test_data_path
+            )
 
 
 
