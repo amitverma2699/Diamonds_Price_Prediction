@@ -4,5 +4,6 @@ scikit-learn
 ipykernel
 matplotlib
 seaborn
+Flask
 
-#-e . #This is used for installing the local packages(DiamondsPricePrediction)or install setup.py file
+#-e . # This is used for installing the local packages(DiamondsPricePrediction)or install setup.py file
