@@ -6,12 +6,12 @@ on:
 
 
 jobs:
-  build-and-push-image:
+  build-and-push-ecr-image:
     name: Build Image
     runs-on: ubuntu-latest
     steps:
     - name: Check out Code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v2
     - name: Install Utilities
       run: 
         sudo apt-get update
