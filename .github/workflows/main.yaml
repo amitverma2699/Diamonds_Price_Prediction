@@ -8,10 +8,10 @@ on:
 jobs:
   build-and-push-ecr-image:
     name: Build Image
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
     - name: Check out Code
-      uses: actions/checkout@main
+      uses: actions/checkout@v4
     - name: Install Utilities
       run: 
         sudo apt-get update
